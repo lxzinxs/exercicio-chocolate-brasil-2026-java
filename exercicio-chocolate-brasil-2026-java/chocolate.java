@@ -1,8 +1,6 @@
 //scanner
 import java.util.Scanner;
 
-import javax.swing.plaf.synth.SynthDesktopIconUI;
-
 public class chocolate {
     public static void main(String[] args) {
         //teclado
@@ -14,15 +12,15 @@ public class chocolate {
 
         if(teor < 25){
             System.out.println("ALERTA: Produto 'Fake'. Classificar como 'Sabor Chocolate");
-        } else if(teor > 25 && teor < 35){
+        } else if(teor >= 25 && teor < 35){
             System.out.println("Chocolate Comum (Padrão Nacional Atual)");
-        } else if(teor > 35){
+        } else if(teor >= 35){
             System.out.println("Chocolate de Alta Qualidade (Padrão Internacional/UE)");
         }
         
 
         System.out.println("O é chocolate ao_leite ou amargo? ");
-        String tipoChocolate = teclado.nextLine().toLowerCase();
+        String tipoChocolate = teclado.next().toLowerCase();
         System.out.println("Escreva o acucar do chocolate: ");
         int acucar = teclado.nextInt();
 
